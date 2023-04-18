@@ -1,0 +1,113 @@
+.app__discover{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+}
+.app__discover-arm_chair{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background: #eef8f4;
+    padding: 1rem ;
+    
+}
+.app__discover-arm_chair img{
+    width: 150px;
+   
+}
+.app__discover-arm_chair-title{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--font-color2);
+    margin: 1rem 0;
+}
+.app__discover-arm_chair-description{
+    font-size: .8rem;
+    line-height: 1rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+.app__discover-latest_designed{
+    display: flex;
+    padding: 1rem;
+    margin: 0 1rem;
+    background: #eef8f4;
+}
+.app__discover-latest_designed img{
+    height: 164px;
+    min-height: 120px;
+}
+.app__discover-latest_designed-content{
+    margin: 0 .8rem;
+    text-align: left;
+}
+.app__discover-latest_designed-content h2{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--font-color2);
+    margin: .3rem 0;
+    padding: 0 1rem;
+}
+.app__discover-content-discreption{
+    font-size: .8rem;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+.app__discover-content-sale{
+    font-size: .8rem;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+.app__discover-content-button{
+    margin-top: 2rem;
+    background: var(--font-color2);
+}
+
+.app__discover-hangin_lamp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 1rem;
+    background: #eef8f4;
+}
+
+.app__discover-hangin_lamp img{
+    width: 50%;
+}
+
+.app__discover-hangin_lamp p{
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+@media screen and (max-width:500px) {
+    .app__discover{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem
+    }
+    .app__discover-arm_chair{
+        width: 80%;
+    }
+    .app__discover-latest_designed{
+        width: 80%;
+        margin: 1rem;
+    }
+    .app__discover-hangin_lamp{
+        width: 80%;
+        margin: 1rem;
+    }
+    .app__discover-latest_designed{
+        display: flex;
+        flex-direction: column;
+    }
+}

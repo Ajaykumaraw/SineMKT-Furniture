@@ -1,0 +1,43 @@
+.header_container{
+    width: 100%;
+    height: 6rem;
+  
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 1rem 0rem ;
+}
+.header-logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: #777;
+}
+.header-logo-text2{
+    color: var(--font-color);
+}
+.header-menu_links a{
+    text-decoration: none;
+    margin: .6rem;
+    color: var(--font-color2);
+    font-size: 16px;
+    font-weight: 600;
+}
+.header_buttons span{
+    font-size: 24px;
+    margin: 1rem;
+}
+.header-menu_links a:hover{
+    color: var(--font-color);
+}
+.header-menu_links .active{
+    color: var(--font-color);
+}
+.header_buttons span{
+    cursor: pointer;
+}
+.header_buttons span:hover{
+    color: var(--font-color)
+}
