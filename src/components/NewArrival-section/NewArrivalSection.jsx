@@ -15,7 +15,7 @@ import arrival8 from '../../assets/images/collection/arrivals8.png';
 
 const NewArrivalSection = () => {
 
-  const imagesCard = [{id:1,images:'arrival1'},
+  const imagesCard = [{id:1,images:'../../../assets/images/collection/arrivals2.png'},
     {id:2,images:'../../../assets/images/collection/arrivals2.png'},
     {id:3,images:'../../../assets/images/collection/arrivals3.png'},
     {id:4,images:'../../../assets/images/collection/arrivals4.png'},
@@ -33,5 +33,6 @@ const NewArrivalSection = () => {
     </div>
   )
 }
+
 
 export default NewArrivalSection

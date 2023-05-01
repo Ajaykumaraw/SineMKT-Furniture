@@ -9,11 +9,12 @@ import arrival from '../../../assets/images/collection/arrivals3.png';
 const Card = ({imgs}) => {
   console.log(imgs);
   const path = imgs.images;
+  
   return (
     <div className='nArrival__card'>
           <div className="nArrival_imageContainer">
               <div className="animation__background">
-                 <img className='nArrival_img' src={path} alt="" />
+                 <img className='nArrival_img' src={arrival} alt="" />
               </div>
           </div>
           <div className="nArrival_addtoCart">

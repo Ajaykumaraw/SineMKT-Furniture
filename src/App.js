@@ -5,13 +5,10 @@ import {Header,WelcomeHero,DiscoverMore,NewArrivalSection,DianingTableSection
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header className="header"/>
       <WelcomeHero/>
       <DiscoverMore/>
       <NewArrivalSection/>
-      <DianingTableSection/>
-      <FeaturedProducts/>
-      <Blog/>
       <Clients/>
       <Footer/>  
     </div>

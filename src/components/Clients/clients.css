@@ -1,0 +1,16 @@
+.app__clients{
+    width: 100%;
+    height: 100%;
+    background: #eef7fa;
+}
+.clientBrands{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0rem;
+}
+.clientBrands img{
+    width: 6rem;
+    margin: 2rem auto;
+}
