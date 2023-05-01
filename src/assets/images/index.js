@@ -12,6 +12,7 @@ import arrival4 from './collection/arrivals4.png';
 import arrival5 from './collection/arrivals5.png';
 import arrival6 from './collection/arrivals6.png';
 import arrival7 from './collection/arrivals7.png';
+import arrival8 from './collection/arrivals4.png';
 import sofaCollection from './collection/sofa-collection-banner.jpg';
 import tabbleBanner from './collection/table-banner.jpg';
 import features1 from './features/f1.jpg';
@@ -41,6 +42,7 @@ export default{
     arrival5,
     arrival6,
     arrival7,
+    arrival8,
     sofaCollection,
     tabbleBanner,
     features1,

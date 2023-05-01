@@ -1,0 +1,75 @@
+.nArrival__card{
+    width: 16rem;
+    height: 26rem;
+    margin: .5rem;
+    background: rgb(255, 251, 251);
+}
+.nArrival_imageContainer{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: rgb(248, 250, 250);
+}
+.animation__background{
+    width: 40%;
+    height: 40%;
+    background: rgb(254, 255, 255);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 21;
+}
+.nArrival_addtoCart{
+    width: 100%;
+    height: 1.7rem;
+    background: gray;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+.animation__background:hover{
+    animation: scaleUp .5s;
+    animation-fill-mode: forwards;
+}
+
+.nArrival_img{
+    width: 7rem;
+    height: 7rem;
+    z-index: 20;
+    object-fit: contain;
+}
+.nArrival_img:hover{
+    animation: scaleUpImg .4s;
+    animation-fill-mode: forwards;
+}
+
+.nArrival__title-price-section{
+    width: 100%;
+    height: 30%;
+}
+.text-color{
+    color: var(--font-color2);
+}
+.nArrival-title{
+    margin: 2rem;
+}
+.text-color:hover{
+    color: var(--font-color);
+}
+
+@keyframes scaleUp{
+    0% {width: 40%;height: 40%; background: rgb(248, 250, 250);}
+    100% {width: 100%;height: 100%; background: rgb(229, 236, 236);}
+}
+@keyframes scaleUpImg{
+    from {width: 7rem;height: 7rem;}
+    to {width: 50%;height: 50%;}
+}

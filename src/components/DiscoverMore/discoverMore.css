@@ -56,16 +56,35 @@
     padding: 0 1rem;
 }
 .app__discover-content-sale{
-    font-size: .8rem;
+    font-size: .9rem;
     line-height: 1.5rem;
     text-align: left;
     padding: 0 1rem;
+    display: flex;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--font-color2);
+}
+.app__discover-price{
+    margin-left: .5rem;
+    color: var(--font-color);
 }
 .app__discover-content-button{
+    width: 7rem;
+    height: 2.5rem;
     margin-top: 2rem;
-    background: var(--font-color2);
+    margin-left: .8rem;
+    border: 1px solid gray;
+    background: #fff;
+    color: gray;
+    font-weight: 100;
+    font-size: .9rem;
+    
 }
-
+.app__discover-content-button:hover{
+    background: var(--font-color2);
+    color: #fff;
+}
 .app__discover-hangin_lamp{
     display: flex;
     flex-direction: column;
@@ -77,6 +96,7 @@
 
 .app__discover-hangin_lamp img{
     width: 50%;
+    height: 55%;
 }
 
 .app__discover-hangin_lamp p{
@@ -87,6 +107,10 @@
     line-height: 1.5rem;
     text-align: left;
     padding: 0 1rem;
+}
+.card_title:hover{
+    color: var(--font-color);
+    cursor: pointer;
 }
 
 @media screen and (max-width:500px) {
