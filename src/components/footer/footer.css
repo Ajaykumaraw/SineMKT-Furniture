@@ -77,3 +77,22 @@
     from{padding-left: .1rem;};
     to{padding-left: .5rem;};
 }
+
+@media screen and (max-width:500px) {
+    .app__footer{
+        
+    }
+    .section_padding{
+       padding: 1rem 2rem;
+    }
+    .app__footer-links{
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+    .footer__icons .ic{
+        font-size: 1.5rem;
+        color: var(--font-color);
+
+    }
+}

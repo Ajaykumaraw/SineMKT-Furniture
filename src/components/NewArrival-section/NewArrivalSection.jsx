@@ -25,7 +25,7 @@ const NewArrivalSection = () => {
     {id:8,images:'../../../assets/images/collection/arrivals8.png'}
     ]
   return (
-    <div className='newArrival__container section_padding'>
+    <div id="NewArrival" className='newArrival__container section_padding'>
         <h2 className='newArrival__container-title'>New Arrivals</h2>
         <div className='newArrival-container-card__section'>
           {imagesCard.map((item)=><Card key={item.id} imgs={item}></Card>)}

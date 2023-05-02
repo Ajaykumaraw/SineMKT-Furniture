@@ -76,3 +76,9 @@
     from {width: 7rem;height: 7rem;}
     to {width: 50%;height: 50%;}
 }
+
+@media screen and (max-width:500px) {
+    .animation__background{
+        background: rgb(248, 250, 250);;
+    }
+}

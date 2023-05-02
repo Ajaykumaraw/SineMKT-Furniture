@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import {CiSearch,CiSettings,CiShoppingCart} from 'react-icons/ci';
+import {CiSearch,CiSettings,CiShoppingCart,CiFacebook,CiInstagram,CiLinkedin,CiYoutube} from 'react-icons/ci';
 
 const Footer = () => {
   return (
@@ -47,10 +47,10 @@ const Footer = () => {
         </div>
         <div className="app__footer-link-copyrights">
             <div className='footer__icons'>
-                <div><CiSearch></CiSearch></div>
-                <div><CiSearch></CiSearch></div>
-                <div><CiSearch></CiSearch></div>
-                <div><CiSearch></CiSearch></div>
+                <div className='ic'><CiFacebook></CiFacebook></div>
+                <div className='ic'><CiInstagram></CiInstagram></div>
+                <div className='ic'><CiLinkedin></CiLinkedin></div>
+                <div className='ic'><CiYoutube></CiYoutube></div>
             </div>
             <div className='footer__copyright'>©Copyright. Designed And Developed By Themesine</div>
         </div>
