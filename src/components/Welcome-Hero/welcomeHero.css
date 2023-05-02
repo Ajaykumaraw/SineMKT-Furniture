@@ -1,5 +1,6 @@
 .app__welcome{
     display: flex;
+    padding-top: 5rem;
 }
 
 .Welcome-container{
