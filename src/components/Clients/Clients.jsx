@@ -8,7 +8,7 @@ import logo5 from '../../assets/images/clients/c5.png';
 
 const Clients = () => {
   return (
-    <div className='app__clients section_padding '>
+    <div id='Clients' className='app__clients section_padding '>
         <div className="clientBrands">
             <img src={logo2} alt="" />
             <img src={logo3} alt="" />

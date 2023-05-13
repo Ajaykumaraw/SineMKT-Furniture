@@ -4,7 +4,7 @@ import images from '../../assets/images';
 
 const DiscoverMore = () => {
   return (
-    <div className='app__discover section_padding'>
+    <div id='Discover' className='app__discover section_padding'>
         <div className='app__discover-arm_chair'>
             <img src={images.popular1} alt="arm char"/>
             <h2 className='app__discover-arm_chair-title card_title'>Arm char</h2>

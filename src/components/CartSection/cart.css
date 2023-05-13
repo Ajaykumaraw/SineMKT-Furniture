@@ -1,0 +1,60 @@
+.app__cart{
+    width: 30%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    top:0;
+    right: 0;
+    z-index: 300;
+    position: fixed;
+    animation: OpenCart 500ms;
+    box-shadow: 1px 1px 1px 2px lightgray;
+    overflow-y: scroll;
+}
+.app__cart-header{
+    width: 100%;
+    height: 16%;
+    font-size: .5rem;
+    box-shadow: 2px 1px 1px lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1rem;
+    color: var(--font-color);
+    cursor: pointer;
+}
+.app__cart-closeIcon{
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+.app__cart-header-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartIcon{
+    font-size: 1.5rem;
+    
+}
+.app__cart_item-section{
+    width: 100%;
+    height: 2rem;
+    background: var(--font-color);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+@keyframes OpenCart {
+    from {
+        width: 0%;
+    }
+    to {
+     width: 30%;
+    }
+  }
+  

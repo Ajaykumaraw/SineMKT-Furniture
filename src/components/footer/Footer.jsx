@@ -4,7 +4,7 @@ import {CiSearch,CiSettings,CiShoppingCart,CiFacebook,CiInstagram,CiLinkedin,CiY
 
 const Footer = () => {
   return (
-    <div className='app__footer section_padding'>
+    <div id='Contact' className='app__footer section_padding'>
        <div className="app__footer-links">
            
             <div className="app__footer-information">

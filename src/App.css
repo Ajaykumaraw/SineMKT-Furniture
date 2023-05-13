@@ -1,8 +1,10 @@
+.App{
+  position: relative;
+}
+
 .header{
   position: fixed;
 }
-
-
 
 @keyframes App-logo-spin {
   from {
