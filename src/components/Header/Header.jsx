@@ -3,13 +3,12 @@ import './header.css';
 import {CiSearch,CiSettings,CiShoppingCart,CiMenuFries,CiCircleRemove} from 'react-icons/ci';
 import logo from '../../assets/logo/logo.png';
 
-const Header = ({setCartOpen}) => {
+const Header = ({setCartOpen,activeSearchBar,searchBar}) => {
   const[enable,setEnable] = useState(false);
 
   const enableMobileMenu = ()=>{
     setEnable(enable => !enable);
   }
-
   return (
     <div className='header_container section_padding'>
         <div className='header-content'>
@@ -32,7 +31,7 @@ const Header = ({setCartOpen}) => {
                 <a href="#Contact">Contact</a>
             </div> : ''}
             <div className="header_buttons">
-                <span><CiSearch/></span>
+                <span onClick={()=> activeSearchBar(searchBar => !searchBar)}><CiSearch/></span>
                 <span className='ciSetting'><CiSettings/></span>
                 <span onClick={()=> setCartOpen(true)}><CiShoppingCart/></span>
             </div>
