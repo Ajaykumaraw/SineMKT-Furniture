@@ -1,14 +1,21 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './header.css';
 import {CiSearch,CiSettings,CiShoppingCart,CiMenuFries,CiCircleRemove} from 'react-icons/ci';
 import logo from '../../assets/logo/logo.png';
+import SearchBar from '../SearchBar/Searchbar';
 
 const Header = ({setCartOpen,activeSearchBar,searchBar}) => {
   const[enable,setEnable] = useState(false);
+  // const searchB = useContext(SearchContext)
 
   const enableMobileMenu = ()=>{
     setEnable(enable => !enable);
   }
+
+  const handleLinkclick = () =>{
+    
+  }
+
   return (
     <div className='header_container section_padding'>
         <div className='header-content'>
@@ -18,7 +25,7 @@ const Header = ({setCartOpen,activeSearchBar,searchBar}) => {
             <div className='mobile-menu-btn' onClick={enableMobileMenu}>{enable?<CiCircleRemove></CiCircleRemove>:<CiMenuFries></CiMenuFries>}</div>
             <div className="header-menu_links">
                 <a href="#Home" id='active' className='active'>Home</a>
-                <a href="#Discover">Discover</a>
+                <a onClick={handleLinkclick} href="#Discover">Discover</a>
                 <a href="#NewArrival">New Arrivals</a>
                 <a href="#Clients">Clients</a>
                 <a href="#Contact">Contact</a>
