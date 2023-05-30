@@ -40,7 +40,7 @@ const Header = ({setCartOpen,activeSearchBar,searchBar}) => {
             <div className="header_buttons">
                 <span onClick={()=> activeSearchBar(searchBar => !searchBar)}><CiSearch/></span>
                 <span className='ciSetting'><CiSettings/></span>
-                <span onClick={()=> setCartOpen(true)}><CiShoppingCart/></span>
+                <span onClick={()=> {}}><CiShoppingCart/></span>
             </div>
 
         </div>
