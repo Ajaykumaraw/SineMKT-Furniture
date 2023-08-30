@@ -10,6 +10,7 @@ import arrival5 from '../../assets/images/collection/arrivals6.png';
 import arrival6 from '../../assets/images/collection/arrivals6.png';
 import arrival7 from '../../assets/images/collection/arrivals7.png';
 import arrival8 from '../../assets/images/collection/arrivals8.png';
+import { products } from '../../SampleData/product';
 
 
 
@@ -28,7 +29,7 @@ const NewArrivalSection = () => {
     <div id="NewArrival" className='newArrival__container section_padding'>
         <h2 className='newArrival__container-title'>New Arrivals</h2>
         <div className='newArrival-container-card__section'>
-          {imagesCard.map((item)=><Card key={item.id} imgs={item}></Card>)}
+          {products.map((item)=><Card key={item.price} prod={item}></Card>)}
         </div>
     </div>
   )
