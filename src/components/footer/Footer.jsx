@@ -52,7 +52,7 @@ const Footer = () => {
                 <div className='ic'><CiLinkedin></CiLinkedin></div>
                 <div className='ic'><CiYoutube></CiYoutube></div>
             </div>
-            <div className='footer__copyright'>©Copyright. Designed And Developed By Themesine</div>
+            <div className='footer__copyright'>©Copyright. Designed And Developed By Ajay kumar</div>
         </div>
     </div>
   )
