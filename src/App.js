@@ -21,16 +21,16 @@ function App() {
   const [searchBar,activeSearchBar] = useState(false);
   const SearchContext = createContext();
 
-    console.log(cartOpen);
+    //console.log(cartOpen);
   return (
     <div className="App">
       <Provider store={store}>
         <SearchContext.Provider value={searchBar}>
-        <Header></Header>
+        <Header cartOpen={cartOpen} setCartOpen={setCartOpen}></Header>
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Homepage />}>
-                <Route index element={<Homepage />} />
+              <Route path="/" element={<Homepage cartOpen={cartOpen}  setCartOpen={setCartOpen} />}>
+                <Route index element={<Homepage cartOpen={cartOpen}   setCartOpen={setCartOpen}/>} />
               </Route>
               <Route path='/:id' element={<SingleProductView />} />
           </Routes>

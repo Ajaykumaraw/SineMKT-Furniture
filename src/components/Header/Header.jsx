@@ -1,10 +1,11 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import './header.css';
 import {CiSearch,CiSettings,CiShoppingCart,CiMenuFries,CiCircleRemove} from 'react-icons/ci';
-import logo from '../../assets/logo/logo.png';
-import SearchBar from '../SearchBar/Searchbar';
+import { useSelector } from 'react-redux';
 
-const Header = ({setCartOpen,activeSearchBar,searchBar}) => {
+const Header = ({cartOpen,setCartOpen,activeSearchBar,searchBar}) => {
+  const cartItems = useSelector(state=> state.cart.products)
+  console.log(cartItems);
   const[enable,setEnable] = useState(false);
   // const searchB = useContext(SearchContext)
 
@@ -38,9 +39,20 @@ const Header = ({setCartOpen,activeSearchBar,searchBar}) => {
                 <a href="#Contact">Contact</a>
             </div> : ''}
             <div className="header_buttons">
+              <div>
                 <span onClick={()=> activeSearchBar(searchBar => !searchBar)}><CiSearch/></span>
+              </div>
+              <div>
                 <span className='ciSetting'><CiSettings/></span>
-                <span onClick={()=> {}}><CiShoppingCart/></span>
+              </div>
+                <div className='header-menu-cart_container'>
+                  <div className='header_menu-cart-icon'>
+                   <span onClick={()=> {setCartOpen(!cartOpen)}}><CiShoppingCart/></span>
+                  </div>
+                 {(cartItems.length>0)? <div className='header-menu-cart_item'>
+                    <div className='header-menu-cart_item-count'>{cartItems.length}</div>
+                  </div>: ""}
+                </div>
             </div>
 
         </div>

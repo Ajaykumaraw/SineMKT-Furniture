@@ -1,16 +1,18 @@
-import React from 'react'
-import {WelcomeHero,DiscoverMore,NewArrivalSection,DianingTableSection
-    ,FeaturedProducts,Blog,Clients,Footer} from '../components/index';
+import {WelcomeHero,DiscoverMore,NewArrivalSection
+   ,Clients} from '../components/index';
 import Cart from '../components/CartSection/Cart';
+import { ToastContainer, toast } from 'react-toastify';
 
-function Homepage() {
+
+function Homepage({cartOpen,setCartOpen}) {
   return (
     <div className='app__home-container' style={{marginTop: '2rem',marginBottom:'2rem'}}>
         <WelcomeHero/>
         <DiscoverMore/>
         <NewArrivalSection/>
         <Clients/>
-        <Cart></Cart>
+        <ToastContainer/>
+       {(cartOpen)?<Cart cartOpen={cartOpen} setCartOpen={setCartOpen}></Cart>:''}
     </div>
   )
 }

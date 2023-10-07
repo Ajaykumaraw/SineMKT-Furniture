@@ -14,6 +14,7 @@ import arrival7 from '../../../assets/images/collection/arrivals7.png';
 import arrival8 from '../../../assets/images/collection/arrivals8.png';
 import { addProducts } from '../../../redux/cart/cartReducer';
 import {proImages} from '../../../assets'
+import { ToastContainer, toast } from 'react-toastify';
 
                    
 
@@ -24,11 +25,15 @@ const Card = ({prod}) => {
 
   const proIMG = proImages;
  
-  console.log(prod)
+  //console.log(prod)
   const dispatch = useDispatch()
   // console.log(imgs);
  // const path = [arrival1,arrival2,arrival3,arrival4,arrival5,arrival6,arrival7,arrival8]
 
+  const addToCartHandler = () =>{
+    toast("Item added to cart");
+    dispatch(addProducts(prod))
+  } 
 
 
   
@@ -40,7 +45,7 @@ const Card = ({prod}) => {
               </div>
           </div>
          
-          <div className="nArrival_addtoCart" onClick={()=>dispatch(addProducts(prod))}>
+          <div className="nArrival_addtoCart" onClick={()=>addToCartHandler()}>
                 <span><CiShoppingCart/> Add to Cart</span>
               </div>
           <div className="nArrival__title-price-section">

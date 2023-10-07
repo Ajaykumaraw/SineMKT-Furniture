@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
-import * as cartActionType from './cartActions.js'
+import * as cartActionType from './cartActions.js'  
+
+
 
 const cartSlice = createSlice({
     name:"cart",
@@ -10,25 +12,35 @@ const cartSlice = createSlice({
     },
     reducers:{  
         addProducts:(state,action) => {
+              if(state.products.includes(action.payload)){
+                console.log('item hai')
+              }else{
                 state.products.push(action.payload)
                 state.quantity += 1;
                 state.total += action.payload.price; 
+              }
+               
            
         },
-        setQuentity: (state,action)=>{
-            console.log(action.payload)
-            state.products.Quntity = [ state.products.Quntity = action.payload]
-        },
         removeProducts:(state,action) => {
-            console.log("in reducer"+action.payload)
-            const prod = state.products.filter(item => item.productID ===action.payload.productID).indexOf;
-            console.log("in reducer"+prod)
-            state.products.slice(prod);
+           state.products.pop()
             state.total -= action.payload.price; 
+        },
+        setQuentity:(state,action) => {
+          
+            console.log(state)  
+        },
+        increaseQuentity:(state,action)=>{
+            console.log(action.payload)
+        //    const product =  state.products.filter((item)=> item.productID ==  action.payload.productID )
+        //    product.quantity = action.payload.count;
+        },
+        decreaseQuentity:(state,action)=>{
+            console.log(action.payload)
         }
     }
 
 })
 
-export const {addProducts,removeProducts,setQuentity} = cartSlice.actions;
+export const {addProducts,removeProducts,setQuentity,increaseQuentity,decreaseQuentity} = cartSlice.actions;
 export default cartSlice.reducer;

@@ -55,9 +55,16 @@ export const products = [
     {
         productID:8,
         name:'Wooden Bed',
-        price: 140,
+        price: 145,
         image:images.arrival8,
         Quntity:1
     },
+    {
+        productID:9,
+        name:'Arm Char',
+        price: 65,
+        image: images.popular1,
+        Quntity:1
+     },
 ]
 
